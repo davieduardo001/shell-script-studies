@@ -1,0 +1,26 @@
+#!/usr/bin/env sh
+
+um="aquarela"
+dois="Shell S2"
+tres="programar"
+quatro="ler"
+cinco="estudar"
+seis="tecnologiaaa"
+sete="escrever"
+oito="LINUX"
+nove="dormir??"
+dez="treinar?????????"
+
+echo "
+MINHAS VARIAVEIS
+	$um
+	$dois
+	$tres
+	$quatro
+	$cinco
+	$seis
+	$sete
+	$oito
+	$nove
+	$dez
+"

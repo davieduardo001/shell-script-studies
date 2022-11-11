@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+echo "esse computador vai desligar agora"
+echo "3"
+sleep 1s
+echo "2"
+sleep 1s
+echo "1"
+sleep 1s
+poweroff

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+echo "Meu texto
+assim que se escreve um texto longo
+deste mesmo modo"
+
+echo -e "Meu comando \ne ativado com o backslash com o -e "
+
+echo -e "COMANDO PARA HORIZONTAL TAB \t e \v PARA VERTICAL TAB "

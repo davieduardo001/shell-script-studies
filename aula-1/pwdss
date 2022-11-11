@@ -1,0 +1,17 @@
+#!/usr/bin/env bash 
+
+echo "Onde estou?"
+cd /
+pwd
+
+echo "Onde estou?"
+cd /home
+pwd
+
+echo "Onde estou?"
+cd /home/ed
+pwd
+
+echo "Onde estou?"
+cd /home/ed/Downloads
+pwd

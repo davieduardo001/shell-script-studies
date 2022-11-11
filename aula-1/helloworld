@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+echo "Entrando no diretorio: "
+cd /home/ed
+
+echo "Aonde eu estou?"
+pwd
+
+echo "Listado o q tem no dir."
+ls

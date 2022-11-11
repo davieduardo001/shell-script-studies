@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+listagem=$(ls /boot)
+listagem_dois=$(ls /home)
+listagem_tres=$(ls /home/davi)
+
+echo -e "listando '/boot' \n $listagem \n\n"
+echo -e "listando '/home' \n $listagem_dois \n\n"
+echo -e "listando dir inexistente \n $listagem_tres \n\n"

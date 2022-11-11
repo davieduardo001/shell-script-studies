@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+echo "qual o diretorio que quer entrar?"
+read diretorio #primeiro processo
+
+cd "$diretorio" #segundo processo
+echo "voce esta em $(pwd)" #terceiro processo
+
+#todos os "processos" sao "filhos" ao retornar para o "pai" as variaveis "morrem"

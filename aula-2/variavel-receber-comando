@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+ID=$(echo "$UID")
+
+echo -e "\n O ID do usuario e $ID \n"

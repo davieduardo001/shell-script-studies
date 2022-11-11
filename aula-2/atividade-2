@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+echo -e "Bem vindo ao METAFORM, seus dados estao seguros!"
+
+sleep 5s
+
+echo -e "\n===Ola $USER,que esta localizado no diretorio: $HOME e esta usando o terminal: $TERM===\n\n"
+
+read -p "Qual o seu nome completo? " nome
+read -p "qual sua idade? " idade
+read -p "qual o seu endereco? " endereco
+read -p "qual o seu telefone? " telefone
+read -p "qual sua escolaridade? " escolaridade
+
+echo -e "\n\n*Vi que seu nome completo e: $nome"
+echo -e "*Sua idade e: $idade"
+echo -e "*seu endereco e: $endereco"
+echo -e "*seu telefone e: $telefone"
+echo -e "*e sua escolaridade e: $escolaridade\n\n"
+
+read -p  "SEUS DADOS ESTAO CORRETOS? [S/N] " dados

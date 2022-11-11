@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+name="EDUARD"
+echo "Meu nome e $name"
+
+age="teste"
+age="teste2"
+age="teste3"
+echo "imprimindo os teste $age"
