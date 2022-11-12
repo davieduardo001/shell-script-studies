@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+#&& todos precisam ser verdadeiros 
+#|| so executa quando for != 0
+#; comando de sequencia
+#test ... && true || false 

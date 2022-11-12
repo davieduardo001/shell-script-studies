@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+#if then elif else == testar o comando
+#STATUS DE SAIDA == 0 == TRUE
+#STATUS DE SAIDA != 0 == FALSE
+
+nome_test="Davi"
+
+read -p "qual o seu nome? " nome
+
+test -z "$nome"
+
+echo "a saida e nula? $?"
+#echo "Status de saida: $?"

@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+echo -e "Bem vindo ao METAFORM, seus dados estao seguros!"
+
+sleep 2s
+
+echo -e "\n===Ola $USER,que esta localizado no diretorio: $HOME e esta usando o terminal: $TERM===\n\n"
+
+read -p "Qual o seu nome completo? " nome
+test -z "$nome"\
+&& { echo "Valor nulo!!"; exit; }
+
+read -p "qual sua idade? " idade
+test -z "$idade"\
+&& { echo "Valor nulo!!"; exit; }
+
+read -p "qual o seu endereco? " endereco
+test -z "$endereco"\
+&& { echo "Valor nulo!!"; exit; }
+
+read -p "qual o seu telefone? " telefone
+test -z "$telefone"\
+&& { echo "VALOR NULO!!"; exit; }
+
+read -p "qual sua escolaridade? " escolaridade
+test -z "$escolaridade"\
+&& { echo "VALOR NULO!!"; exit; }
+
+echo -e "\n\n*Vi que seu nome completo e: $nome"
+echo -e "*Sua idade e: $idade"
+echo -e "*seu endereco e: $endereco"
+echo -e "*seu telefone e: $telefone"
+echo -e "*e sua escolaridade e: $escolaridade\n\n"
+
+read -p  "SEUS DADOS ESTAO CORRETOS? [Y/n] " data
+echo "a resposta foi: $data"
+
+test -z "$data" && { echo "OKAY, OS DADOS ESTAO OK! ESTA VINDO DA RESPOSTA 0"; exit; }
+
+data=${data,,}
+test "n" = "$data" \
+&& { echo "OS DADOS NAO ESTAO OK, ;-;"; exit; } \
+|| { test "y" = "$data" && echo "OKAY, SEUS DADOS ESTAO OK" || echo "NAO FOI ISSO QUE PERGUNTEI";  }
