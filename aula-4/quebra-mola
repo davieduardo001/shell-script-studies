@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+#Criando um programa
+#Estilo de transito
+
+#Limite de 80
+#Limite de 5km, que da 85
+#Entre 80 a 85, mensagem
+#Passou de 85, multa
+
+read -p "Digite sua velocidade: " velocidade
+[ "$velocidade" -ge "80" ] \
+&& [ "$velocidade" -le "85" ] && echo "Voce esta no limite"
+
+[ "$velocidade" -ge "86" ] \
+&& echo "multa"

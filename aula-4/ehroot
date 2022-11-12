@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#[ $(type -P fish) ] && echo "exite" || echo "nao existe"
+
+#[ "$UID" -ne "0" ] && { echo "necessita de root"; exit 1; }
+
+#[ $(ping -c 1 duckduckgo.com) || { echo "necessita de conexcao com a internet"; exit 1; }
+
+read -p "nome? " name
+[ "$name" ] && echo "tem conteudo" || { echo "nao tem conteudo"; exit 1; }

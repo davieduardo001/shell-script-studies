@@ -36,7 +36,6 @@ read -p  "SEUS DADOS ESTAO CORRETOS? [Y/n] " data
 echo "a resposta foi: $data"
 
 test -z "$data" && { echo "OKAY, OS DADOS ESTAO OK! ESTA VINDO DA RESPOSTA 0"; exit; }
-
 data=${data,,}
 test "n" = "$data" \
 && { echo "OS DADOS NAO ESTAO OK, ;-;"; exit; } \
