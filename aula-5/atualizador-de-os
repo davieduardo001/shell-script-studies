@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# Testes do programa
+[ "$UID" -ne "0" ] && { echo "necessita de root"; exit 1; }
+if apt update
+then
+	echo "LISTA DE PACOTES FORAM ATUALIZADAS. [ok]"
+else
+	echo "ERRO NA ATUALIZACAO DE PACOTES. SAINDO DA ATUALIZACAO! [err]"
+fi
+
+if apt -y upgrade
+then
+	echo "UPGRADE DE PACOTES FORAM ATUALIZADOS. [ok]"
+else
+	echo "UPGRADE DE PACOTES FALHOU. [err]"
+fi
+
+#Checagem de cache clean
+if apt clean #Limpando var/cache/apt/archives
+then
+	echo "ARQUIVOS DE CACHE APAGADOS. [ok]"
+else
+	echo "APT CLEAN TRAVOU?? [err]"
+fi

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if wget -q --spider duckduckgo.com
+then
+	echo "tem internet"
+else
+	echo "nao tem iternet"
+fi

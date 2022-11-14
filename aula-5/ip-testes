@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# variaveis do programa ====
+servidor1="icanhazip.com"
+servidor2="ipinfo.io"
+#===========================
+
+# testes iniciais ==========
+echo "verificando se a conexao com internet..."
+if ! wget -q --spider www.duckduckgo.com; then
+	echo "necessita de internet"
+	exit 1
+fi
+#===========================
+
+read -p "QUAL O SERVIDOR GOSTARIA DE USAR? [1/2] " server
+
+#exec_=$(if ! curl -s "$servidor1"; then curl -s "$servidor2"; fi)
+
+if [ "$server" = "1" ]; then
+	exec_=$(curl -s "$servidor1")
+elif [ "$server" = "2" ]; then
+	exec_=$(curl -s "$servidor2")
+else
+	echo "server nao existe"
+fi
+
+echo "O seu ip externo e: $exec_"

@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+read -p "esta vindo carro da direita? " rep1
+if [ "$rep1" = "sim" ]
+then
+	echo "Ok, entao nao vamos atravessar"
+	exit 1
+fi
+
+read -p "esta vindo da esquerda? " rep2
+if [ "$rep2" = "sim" ]; then
+	echo "ok entao nao vamos atravessar"
+	exit 1
+fi
+
+read -p "posso travessar? [sim/nao]" rep3
+if [ "$rep3" = "sim" ]; then
+	echo "ATRAVESSOU"
+else
+	echo "fica ai cara"
+fi
+
+echo "ok"
