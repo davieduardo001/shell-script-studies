@@ -10,14 +10,14 @@ echo "O terceiro parametro passado foi: $3"
 
 echo "O oitavo parametro funcional foi: $8"
 
-echo "O parametro 1 e 4 foi: $14" #imprime o valor do parametro 1 e o numero 4 em sequencia
-echo "O parametro 14 foi: ${14}" #agora sim imprime o 14 parametro
+#echo "O parametro 1 e 4 foi: $14" #imprime o valor do parametro 1 e o numero 4 em sequencia
+#echo "O parametro 14 foi: ${14}" #agora sim imprime o 14 parametro
 
 #O OUTRO GRUPO E $#(numero total de paramentros) $*(todos os parametros concatenados) $@(todos os parametros concatenadas em strings diferentes)
 
-echo "O total de parametros foi: $#"
-echo "Os parametros em sequencia e: $*" #"a b c d e f g h..."
-echo "Os parametros em sequencia 'arrumados' e: $@" #"a" "b" "c" "d"...
+#echo "O total de parametros foi: $#"
+#echo "Os parametros em sequencia e: $*" #"a b c d e f g h..."
+#echo "Os parametros em sequencia 'arrumados' e: $@" #"a" "b" "c" "d"...
 
 ##OUTRO TIPOS DE PARAMETROS
 #* $$ numero de PID(processo) do script
@@ -25,6 +25,6 @@ echo "Os parametros em sequencia 'arrumados' e: $@" #"a" "b" "c" "d"...
 #* $_ ultimo argumento do ultimo comando executado
 #* $? mostra o codigo de retorno do ultimo comando
 
-while sleep 1s; do
-	echo "numero de PID: $$"
-done
+#while sleep 1s; do
+#	echo "numero de PID: $$"
+#done
