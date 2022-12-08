@@ -27,4 +27,8 @@
 #Concatenando aritimetica
 # (()) retorna os status de saida {retornando 0 ou 1}
 # $(()) retona o valor da aritimetica encapsulado
-(($UID == 0)) #testa o usuario
+teste=$(($UID == 0)) #testa o usuario
+echo "$teste"
+
+soma=$((2+2))
+echo "$soma"
