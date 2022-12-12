@@ -1,0 +1,1 @@
+#cat lista-n-ordenada.txt | sort -o(ordena) lista-n-ordenada.txt
