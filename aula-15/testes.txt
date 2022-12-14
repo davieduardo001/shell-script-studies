@@ -1,0 +1,14 @@
+#COMANDO GREP
+#faz a filtragem de acordo com
+#os parametros passados
+
+grep PARAMETROS "FILTRO" "ARQUIVO"
+"^2" => filtro procurar por ID 
+-o   => retorna status de saida
+-q   => quiet n retorna nada 
+-i   => desativa case sensitive
+
+#COMANDO CUT COM ENTRADA DE VARIAVEL
+echo "$VARIAVEL" | cut -d ':' -f 3
+-d   => onde vai cortar
+-f   => foi cortado. o que vai retornar?
