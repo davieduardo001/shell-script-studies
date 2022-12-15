@@ -14,12 +14,17 @@ color_close="\033[m"
 (($UID==0)) && { echo "root nao"; exit 1; }
 
 #========================== FUNCOES
-
-source ./interface.sh
-source ./add-contacts.sh
+source ./functions/interface.sh
+source ./functions/add-contacts.sh
+source ./functions/busca.sh
+source ./functions/ajuda.sh
+source ./functions/listar.sh
 
 #===MENU DE ENTRADA================
 case $1 in
 	-c|--create) create;; #funcao create
+	-s|--search) buscar;; #funcao busca
+	-h|--help) ajudar;;
+	-l|--list) listar;;
 	*) interface_de_criacao;; #chama a funcao padrao
 esac
