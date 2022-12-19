@@ -1,0 +1,9 @@
+##GLOB => faz a generalizacao de arquivos e diretorios
+
+rm * 			=> exclui tudo dentro da pasta
+ls D* 			=> iniciado em D imprima todo o resto
+ls *.txt 		=> finalizado com .txt
+ls *.{txt,png,jpg} 	=> ou txt ou png ou jpg
+
+ls teste??? 		-> os ??? sao quaisquer char's dentro da string
+		        |-> um char qualquer
