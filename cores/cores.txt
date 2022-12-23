@@ -1,0 +1,31 @@
+###INICIO###
+*\033 => ESC
+*\e	 => "
+
+###COR###
+#PADRAO DE CORES (ANSI)
+*[fundo;letra m
+
+COR:				-letra			-fundo
+preto				  30					40
+vermelho			31					41
+verde					32					42
+amarelo				33					43
+azul					34					44
+rosa					35					45
+ciano					36					46
+branco				37					47
+
+
+###OPCIONAL###
+;OPCAOm
+
+OPCAO			
+bold - 1m
+sublinhado - 4m
+piscando - 5m
+
+###FECHAMENTO###
+*\033[m
+ou
+*\033[m
