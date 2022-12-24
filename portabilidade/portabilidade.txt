@@ -1,0 +1,5 @@
+#KSH, BASH and ZSH => the portable
+
+use:
+*printf
+*type -p
